@@ -26,11 +26,11 @@ def Arrange():
         if file_type[i] == '' or file_type[i].isspace():
             tkm.showinfo(title='注意', message='请不要留空')
             space = True
-            print("空格是", file_type[i].isspace())
+            # print("空格是", file_type[i].isspace())
             break
         else:
             space = False
-            print("空格是", file_type[i].isspace())
+            # print("空格是", file_type[i].isspace())
 
     # 如果文本框不为空或空格才执行
     if not space:
@@ -48,20 +48,20 @@ def Arrange():
                     # 路径与要查找的扩展名
                     path = UI.entry1_text.get() + '/*.' + file_type[j]
                     glob_path = glob.glob(path)
-                    print(glob_path)
+                    # print(glob_path)
                     # 如果glob_path有值
                     if glob_path:
                         if not os.path.exists(UI.entry2_text.get() + "/" + file_type[j]):
                             # 创建文件夹
                             os.mkdir(UI.entry2_text.get() + "/" + file_type[j])
-                            print("cnm")
+                            # print("cnm")
                         # 整理文件
                         for k in range(len(glob_path)):
-                            print(glob_path[k])
+                            # print(glob_path[k])
                             shutil.move(glob_path[k], UI.entry2_text.get() + "/" + file_type[j])
-                        print("oooooooo")
-                    else:
-                        print("tttttttt")
+                        # print("oooooooo")
+                    # else:
+                        # print("tttttttt")
 
                 # 整理完成打开整理后的文件夹并提示
                 os.startfile(UI.entry2_text.get())

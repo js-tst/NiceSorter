@@ -64,7 +64,7 @@ def UI_Init():
     # 标签3
     label3 = tk.Label(root, text="要进行整理的文件类型（扩展名，用；隔开）")
     # 标签4
-    label4 = tk.Label(root, fg='#808080', text="Powered\nby\nJSTST\nA.D.\n2023-\n12-27\nver-0.1")
+    label4 = tk.Label(root, fg='#808080', text="Powered\nby\nJSTST\nA.D.\n2023-\n12-29\nver-0.2")
 
     # 滚动条
     text_scrollbar = tk.Scrollbar(root)

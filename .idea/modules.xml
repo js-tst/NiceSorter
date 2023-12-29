@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../AutoClear/.idea/AutoClear.iml" filepath="$PROJECT_DIR$/../AutoClear/.idea/AutoClear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NiceSorter.iml" filepath="$PROJECT_DIR$/.idea/NiceSorter.iml" />
     </modules>
   </component>
 </project>
